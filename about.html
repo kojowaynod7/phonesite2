@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/dcc8dd3e00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <div id="sidenav">
+        <nav>
+          <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="find-more.html">FIND MORE</a></li>
+          <li><a href="#footer">MEET US</a></li>
+
+          </ul>
+          
+        </nav>
+  </div>
+
+  <div id="menuBtn">
+          <img src="image/menu.PNG" alt="" id="menu">
+  </div>
+    <section id="service">
+        <div class="title-text">
+            <p>ABOUT US</p>
+    
+        </div>
+
+        <header>
+            <h1>Waynod i-Store</h1>
+        </header>
+    
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to Waynod i-Store, your one-stop destination for the latest and greatest iphones and accessories. At Waynod i-Store, we are committed to providing high-quality devices that meet your communication and technology needs.</p>
+    
+            <h2>Meet Our CEO</h2>
+            <img src="image/EMMA.JPG" alt="CEO Image">
+            <p><strong>Kojo Waynod</strong></p>
+            <p>With a passion for technology and a vision for innovation, Waynod founded this  Shop in 2020. As the C.E.O, he leads our dedicated team in delivering top-notch products and exceptional customer service.</p>
+    
+            <p>Feel free to explore our website and discover a wide range of iphones, accessories, and expert advice. Thank you for choosing Waynod i-Store!</p>
+        </section>
+    
+          <section id="footer">
+            <div class="title-text">
+              <p>CONTACT</p>
+              <H1>Visit Shop Today</H1>
+            </div>
+  
+            <div class="footer-row">
+              <div class="footer-left">
+                  <h1>Opening Hours</h1>
+                  <p><i class="fa fa-clock-o"></i>Monday to Friday - 8:30am to 6pm</p>
+                  <p><i class="fa fa-clock-o"></i>Saturday  - 8am to 7pm</p>
+              </div>
+              <div class="footer-right">
+                  <h1>Get In Touch</h1>
+                  <p>Number 2, Takoradi <i class="fa fa-map-marker"></i></p>
+                  <p>+233 548 985 133 <i class="fa fa-phone"></i></p>
+              </div>
+            </div>
+            <div class="social-links">
+              
+              <a href="https://www.facebook.com/profile.php?
+              id=61554769784810&mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+               <a href="https://x.com/kojowaynod?s=21"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/@kojowaynod7?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+               <a href="https://wa.me/0548985133"><i class="fa fa-whatsapp"></i></a>
+              <p><h5>developed by Kojo Waynod</h5></p>
+              <p>&copy; 2024 Phone Shop. All rights reserved.</p>
+            </div>
+        </section>   
+
+
+
+
+    <script>
+        var menuBtn =document.getElementById("menuBtn")
+        var sidenav =document.getElementById("sidenav")
+        var menu =document.getElementById("menu")
+       
+        menuBtn.onclick = function(){
+           if (
+               sidenav.style.right == "-250px"){
+               sidenav.style.right = "0";
+               menu.src = "image/close.PNG"
+           }
+           else {
+               sidenav.style.right = "-250px";
+               menu.src = "image/menu.PNG";
+           }
+        }
+     
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1000,
+            speedAsDuration: true
+           } );
+   </script>
+</body>
+</html>
